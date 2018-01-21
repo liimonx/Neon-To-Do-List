@@ -140,4 +140,15 @@ ul.todo:not(#completed) li .buttons button.complete:hover svg
     background: rgba(37,185,154,0.75)
 ul.todo:not(#completed) li .buttons button.complete:hover svg .fill
     fill: #ffffff
-
+ul.todo#completed:not(:empty)
+    position: relative
+    padding: 60px 0 0 0
+    &:before
+        content: ''
+        width: 150px
+        height: 1px
+        background: #e8eee8
+        position: absolute
+        top: 30px
+        left: 50%
+        margin: 0 0 0 -75px
